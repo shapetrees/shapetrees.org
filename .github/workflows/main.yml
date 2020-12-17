@@ -20,4 +20,4 @@ jobs:
         aws-region: 'us-east-1'
         
     - name: Copy files
-      run: aws s3 sync . s3://${{ secrets.DEPLOY_AWS_S3_BUCKET }}/ --no-progress --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+      run: aws s3 sync . s3://${{ secrets.SHAPETREESORG_DEPLOY_AWS_S3_BUCKET }}/ --no-progress --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
