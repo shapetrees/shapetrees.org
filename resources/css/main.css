@@ -283,7 +283,8 @@ svg.st-logo {
 .info-block {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  max-width: 80ch;
+  line-height: 21px;
   margin: 1rem auto;
   justify-content: center;
   text-align: center;
